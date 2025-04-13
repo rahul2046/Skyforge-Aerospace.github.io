@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyForge Aerospace</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    // Smooth scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Hero -->
+  <section class="bg-white h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-5xl font-bold mb-4">SkyForge Aerospace</h1>
+    <p class="text-xl text-gray-600 mb-6">Engineering the Skies, Autonomously</p>
+    <a href="#about" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Explore More</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-lg text-gray-700">SkyForge Aerospace is a student-founded startup focused on designing and developing autonomous UAVs and intelligent aerospace systems. Our mission is to build the next generation of aerial technology with a focus on autonomy, sustainability, and accessibility.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">Autonomous UAV Navigation</h3>
+          <p class="text-gray-600 mt-2">Implemented in CoppeliaSim using Python, focusing on collision avoidance and path planning using ML techniques.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold">CFD Simulations</h3>
+          <p class="text-gray-600 mt-2">Simulated UAV airflow using ANSYS and OpenFOAM for optimized aerodynamic performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section id="internships" class="py-20 px-6 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Internships</h2>
+      <p class="text-lg text-gray-700 mb-6">We offer certified internships for passionate students in domains like avionics, drone simulations, and media outreach. Stay tuned for openings or drop us a mail!</p>
+      <a href="mailto:skyforge.aero@gmail.com" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- Join Us -->
+  <section id="join" class="py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Join Our Team</h2>
+      <p class="text-lg text-gray-700 mb-6">We're recruiting for:</p>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>🔧 Avionics Engineers – PCB, Embedded Systems, Autopilot</li>
+        <li>🎥 Media & Video Editors – Reels, Posters, Visuals</li>
+      </ul>
+      <p class="mt-4">Shoot your resume or portfolio to <strong>skyforge.aero@gmail.com</strong></p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact" class="bg-white py-10 px-6 text-center">
+    <p class="text-gray-700">📧 skyforge.aero@gmail.com</p>
+    <p class="text-gray-500 text-sm mt-2">&copy; 2025 SkyForge Aerospace. All rights reserved.</p>
+  </footer>
+</body>
+</html>
